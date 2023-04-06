@@ -1,0 +1,920 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap");
+
+/* styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Share Tech Mono", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 1.2em;
+}
+
+#wrapper {
+  width: 100%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+}
+
+hr {
+  border: 2px solid #3a3a3a;
+}
+
+section {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+section h2,
+h1 {
+  margin-left: 0.25em;
+}
+
+/**
+Header styles
+ */
+header div {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+header a {
+  align-self: center;
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1.2em;
+}
+
+/**
+Nav styles
+ */
+nav {
+  background-color: #3a3a3a;
+}
+
+nav ul {
+  display: flex;
+  padding: 0 0 0 0.25rem;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+nav li {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/**
+Form styles
+*/
+/* .message{
+  color: #3a3a3a;
+} */
+
+form textarea {
+  resize: none;
+}
+
+form {
+  max-width: 300px;
+  padding: 15px;
+}
+form input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form #regbtn,
+form #signinbtn,
+form #classbtn {
+  font-weight: bold;
+  background-color: #4c96d7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#vehmanage button {
+  max-width: 250px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: #4c96d7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#vehmanage button:hover {
+  opacity: 0.8;
+}
+
+/**
+Footer styles
+ */
+footer p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+.welcome {
+  padding-top: 20px;
+  font-size: larger;
+  font-weight: 400;
+}
+
+#inv-display {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#inv-display a {
+  text-decoration: none;
+}
+#inv-display li {
+  margin-bottom: 0.5em;
+  border: 1px #ccc solid;
+  list-style-type: none;
+  flex: 1 1 auto;
+}
+
+#inv-display li img {
+  max-width: 100%;
+  height: 120px;
+}
+#classificationList {
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+/* 
+ .thumbnail { 
+  top:-50px; 
+  left:-35px; 
+  display:block; 
+  z-index:999; 
+  cursor: pointer; 
+  -webkit-transition-property: all; 
+  -webkit-transition-duration: 0.3s; 
+  -webkit-transition-timing-function: ease; 
+  }  */
+
+#inv-display {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#inv-display li {
+  margin-bottom: 0.5em;
+  border: 1px #ccc solid;
+  list-style-type: none;
+  flex: 1 1 auto;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+#inv-display li img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+#inv-display li hr {
+  border-top: 3px solid black;
+  width: 100%;
+}
+#detailed-view section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#space-form #invId {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+}
+
+#space-form fieldset {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+}
+
+#detailed-view section img {
+  grid-row: 1/5;
+  padding: 0.5rem;
+  max-width: 500px;
+}
+#detailed-view section .color {
+  grid-row: 3/4;
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+}
+#detailed-view section .price {
+  grid-column: 1/2;
+  padding: 0.5rem;
+}
+#detailed-view section h2 {
+  grid-row: 1/2;
+  padding: 0.5rem 0 0;
+}
+#detailed-view section .description {
+  grid-row: 2/3;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  line-height: 1.6;
+}
+#detailed-view section .stock {
+  padding: 0.5rem 0 0rem 1rem;
+  grid-row: 4/5;
+}
+#detailed-view img {
+  width: 100%;
+ position: absolute;
+  padding-top: 100px;
+ }
+
+img.thumbnail {
+  transition: transform .1s ease-in-out;
+  position: absolute;
+  width: 150px;
+  height: 100px;
+ 
+}
+#image-details img.thumbnail {
+
+  width: 150px;
+  height: 100px;
+}
+
+img.thumbnail:hover{
+  transform: scale(2.5); 
+ cursor:pointer;
+
+ z-index: 1;
+}
+
+
+
+ul#image-display{
+  list-style-type: none;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+ul#image-display img{
+  width: 200px;
+ height: 180px;
+ justify-content: flex-start;
+ border-radius: 10px; ;
+ }
+ ul#image-display a{
+text-decoration: none;
+ font-size: smaller;
+ }
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("/phpmotors/images/site/small_check.jpg");
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 1.9em;
+  }
+
+  /**
+  Nav Styles
+   */
+  nav {
+    margin-top: 0.75rem;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    width: 4.5em;
+    padding: 0.25rem 0;
+  }
+
+  nav a:hover {
+    color: #3a3a3a;
+    background-color: #fff;
+  }
+}
+
+main {
+  padding-left: 0.25rem;
+}
+
+#delorean {
+  background-image: url("/phpmotors/images/delorean.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#delorean h2 {
+  margin-left: 0;
+}
+
+#delorean a:hover {
+  opacity: 0.5;
+}
+
+#delorean li {
+  list-style: none;
+  color: #4c96d7;
+}
+
+#delorean li h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #4c96d7;
+}
+
+/* For vehicle display in classification view */
+#inv-display {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+#inv-display h2 {
+  font-size: 1rem;
+}
+
+#inv-display li {
+  max-width: 200px;
+  flex: 1 0 auto;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#inv-display div {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #delorean #actionbtn {
+    max-width: 130px;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 150px;
+    position: absolute;
+  }
+  #review {
+    margin-top: 80px;
+  }
+}
+#delorean ul {
+  padding-left: 0;
+  margin-top: 0;
+  max-width: 200px;
+  margin-left: 0.5em;
+  margin-bottom: 8em;
+}
+
+#delorean li {
+  font-size: 0.85em;
+}
+
+#actionbtn:hover {
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0.25em;
+}
+
+.flex a {
+  width: 100%;
+}
+
+.add-col {
+  background-color: #4c96d7;
+  height: 5.5em;
+  width: 95%;
+  border: #3a3a3a solid 1px;
+}
+
+a figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  margin: auto;
+  padding-top: 0.5em;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+#review li {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  #wrapper {
+    border: 5px solid #4c96d7;
+    border-radius: 10px;
+    margin-top: 1em;
+    width: 75%;
+  }
+
+  #delorean ul {
+    font-size: 1.6em;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 15em;
+  }
+
+  #delorean {
+    background-size: contain;
+    margin-bottom: 0;
+  }
+
+  #actionbtn {
+    display: block;
+    width: 90%;
+    margin-top: 1.5em;
+  }
+
+  .flex-content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #review h2,
+  #add-ons h2 {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+
+  #add-ons {
+    order: -1;
+  }
+
+  #review li {
+    font-size: 1.1em;
+  }
+
+  #add-ons {
+    width: 45%;
+  }
+
+  #add-ons,
+  #review {
+    margin-top: 0;
+  }
+}
+
+/* styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Share Tech Mono", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 1.2em;
+}
+
+#wrapper {
+  width: 100%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+}
+hr {
+  border: 2px solid #3a3a3a;
+}
+
+section {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+section h2,
+h1 {
+  margin-left: 0.25em;
+}
+
+/**
+Header styles
+ */
+header div {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+header a {
+  align-self: center;
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1.2em;
+}
+
+/**
+Nav styles
+ */
+nav {
+  background-color: #3a3a3a;
+}
+
+nav ul {
+  display: flex;
+  padding: 0 0 0 0.25rem;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+nav li {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/**
+Form styles
+*/
+/* .message{
+  color: #3a3a3a;
+} */
+
+form textarea {
+  resize: none;
+}
+
+form {
+  max-width: 300px;
+  padding: 15px;
+}
+form input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form #regbtn,
+form #signinbtn,
+form #classbtn {
+  font-weight: bold;
+  background-color: #4c96d7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+form #regbtn:hover,
+form #signinbtn:hover {
+  opacity: 0.8;
+}
+
+/**
+Footer styles
+ */
+footer p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+.welcome {
+  padding-top: 20px;
+  font-size: larger;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("/phpmotors/images/site/small_check.jpg");
+    background-size: cover;
+  }
+  #detailed-view img {
+    width: 100%;
+    position: relative;
+  }
+  h1 {
+    font-size: 1.9em;
+  }
+
+  /**
+  Nav Styles
+   */
+  nav {
+    margin-top: 0.75rem;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    width: 4.5em;
+    padding: 0.25rem 0;
+  }
+
+  nav a:hover {
+    color: #3a3a3a;
+    background-color: #fff;
+  }
+}
+
+main {
+  padding-left: 0.25rem;
+}
+
+#delorean {
+  background-image: url("/phpmotors/images/delorean.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#delorean h2 {
+  margin-left: 0;
+}
+
+#delorean a:hover {
+  opacity: 0.5;
+}
+
+#delorean li {
+  list-style: none;
+  color: #4c96d7;
+}
+
+#delorean li h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #4c96d7;
+}
+
+/* For vehicle display in classification view */
+#inv-display {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+#inv-display h2 {
+  font-size: 1rem;
+}
+
+#inv-display li {
+  max-width: 200px;
+  flex: 1 0 auto;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#inv-display div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #detailed-view img {
+    width: 100%;
+
+    position: relative;
+  }
+  #delorean #actionbtn {
+    max-width: 130px;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 150px;
+    position: absolute;
+  }
+
+  #review {
+    margin-top: 80px;
+  }
+}
+#delorean ul {
+  padding-left: 0;
+  margin-top: 0;
+  max-width: 200px;
+  margin-left: 0.5em;
+  margin-bottom: 8em;
+}
+
+#delorean li {
+  font-size: 0.85em;
+}
+
+#actionbtn:hover {
+  opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0.25em;
+}
+
+.flex a {
+  width: 100%;
+}
+
+.add-col {
+  background-color: #4c96d7;
+  height: 5.5em;
+  width: 95%;
+  border: #3a3a3a solid 1px;
+}
+
+a figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  margin: auto;
+  padding-top: 0.5em;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+#review li {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  #wrapper {
+    border: 5px solid #4c96d7;
+    border-radius: 10px;
+    margin-top: 1em;
+    width: 75%;
+  }
+
+  #detailed-view img {
+  
+    width: 100%;
+    position: relative;
+  }
+  #delorean ul {
+    font-size: 1.6em;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 15em;
+  }
+
+  #delorean {
+    background-size: contain;
+    margin-bottom: 0;
+  }
+
+  #actionbtn {
+    display: block;
+    width: 90%;
+    margin-top: 1.5em;
+  }
+
+  .flex-content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #review h2,
+  #add-ons h2 {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+
+  #add-ons {
+    order: -1;
+  }
+
+  #review li {
+    font-size: 1.1em;
+  }
+
+  #add-ons {
+    width: 45%;
+  }
+
+  #add-ons,
+  #review {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  #detailed-view #image-details img {
+  width: 200px;
+    height: 150px;
+  }
+}
